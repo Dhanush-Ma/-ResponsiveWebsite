@@ -7,5 +7,13 @@ const navlinks = document.querySelectorAll("ul a").forEach(link => {
     }
 })
 
+window.addEventListener("load",function(){
+    const navlinks = document.querySelectorAll("ul a").forEach(link=> {
+    if(link.href.includes(`${currentTab}`))
+    {
+        link.classList.remove("current-page")
+    }
+})
 
+})
 
